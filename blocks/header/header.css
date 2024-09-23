@@ -44,14 +44,14 @@ header .nav-sign-in .default-content-wrapper {
   width: 100%;
 }
 
+header nav a:any-link {
+  color: currentcolor;
+}
+
 header .nav-sign-in .button-container,
 header .nav-sign-in .button-container a {
   margin: 0;
   padding: 0;
-}
-
-header nav a:any-link {
-  color: currentcolor;
 }
 
 header .nav-sign-in .button-container a {
