@@ -50,6 +50,10 @@ header .nav-sign-in .button-container a {
   padding: 0;
 }
 
+header nav a:any-link {
+  color: currentcolor;
+}
+
 header .nav-sign-in .button-container a {
   color: var(--text-color-hf);
   text-transform: uppercase;
@@ -77,10 +81,6 @@ header .nav-sign-in .button-container a {
 header nav p {
   margin: 0;
   line-height: 1;
-}
-
-header nav a:any-link {
-  color: currentcolor;
 }
 
 /* hamburger */
