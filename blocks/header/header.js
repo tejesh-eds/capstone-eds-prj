@@ -124,7 +124,6 @@ export default async function decorate(block) {
     const section = nav.children[i];
     if (section) section.classList.add(`nav-${c}`);
   });
-  
   const navBrand = nav.querySelector('.nav-brand');
   const brandLink = navBrand.querySelector('.button');
   if (brandLink) {
@@ -165,5 +164,5 @@ export default async function decorate(block) {
   block.append(navWrapper);
 
   const signInWrapper = nav.querySelector('.nav-sign-in');
-  block.prepend(signInWrapper)
+  block.prepend(signInWrapper);
 }
