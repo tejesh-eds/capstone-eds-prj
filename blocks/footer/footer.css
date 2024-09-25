@@ -95,18 +95,18 @@ footer .section .default-content-wrapper p a {
   footer .footer > div {
     padding: 40px 32px 24px;
   }
-  
-  footer .columns > div > div {
-    flex: 1;
-    order: unset;
-  }
-  
+
   footer .columns > div {
     align-items: center;
     flex-direction: unset;
     gap: 24px;
   }
   
+  footer .columns > div > div {
+    flex: 1;
+    order: unset;
+  }
+
   footer .columns > div > div:nth-child(1) {
     flex: 0;
   }
