@@ -1,6 +1,6 @@
 .cards-container .default-content-wrapper h3 {
   font-weight: normal;
-  font-size: var(--fontSizeH3);
+  font-size: var(--font-size-h3);
 }
 
 .cards-container .default-content-wrapper h3::after {
@@ -12,7 +12,7 @@
 }
 
 .cards-container .default-content-wrapper h4 {
-  font-size: var(--fontSizeH4);
+  font-size: var(--font-size-h4);
   font-weight: normal;
 }
 
@@ -42,7 +42,7 @@
 .cards .cards-card-body .button-container a {
   margin: 0;
   background-color: transparent;
-  padding: 3px 0 0 0;
+  padding: 3px 0 0;
   color: var(--background-color-hf);
   font-family: var(--body-font-family);
   font-size: var(--body-font-size-m);

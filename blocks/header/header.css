@@ -11,22 +11,16 @@ header {
 header .nav-wrapper {
   background-color: var(--background-color);
   width: 100%;
-  /* z-index: 2;
-  position: fixed; */
   padding-bottom: 50px;
   padding-top: 50px;
-  -webkit-transition: padding-bottom 0s ease,padding-top 0s;
-  -webkit-transition: padding-bottom 0s ease-out,padding-top 0s ease ease-out 0s;
-  transition: padding-bottom 0s ease-out, padding-top 0s ease ease-out 0s;
+  transition: padding-bottom 0s ease, padding-top 0s;
 }
 
 header .nav-wrapper.fixed-nav {
   padding-top: 15px;
   padding-bottom: 15px;
   box-shadow: 0 8px 20px 0 var(--opecity-color-42);
-  -webkit-transition: padding-bottom .5s ease,padding-top .5s;
-  -webkit-transition: padding-bottom .5s ease-out,padding-top .5s ease ease-out .25s;
-  transition: padding-bottom 0.5s ease-out, padding-top 0.5s ease ease-out 0.25s;
+  transition: padding-bottom .5s ease,padding-top .5s;
 }
 
 header nav {
@@ -69,6 +63,11 @@ header .nav-sign-in .default-content-wrapper {
 
 header nav a:any-link {
   color: currentcolor;
+}
+
+header nav .nav-sections ul > li a {
+  padding: 15px;
+  text-decoration: none;
 }
 
 header .nav-sign-in .button-container,
@@ -225,11 +224,6 @@ header nav .nav-sections ul > li {
   text-transform: uppercase;
   font-size: var(--body-font-size-xs);
   color: var(--background-color-hf);
-}
-
-header nav .nav-sections ul > li a {
-  padding: 15px;
-  text-decoration: none;
 }
 
 header nav .nav-sections ul > li:hover a,
