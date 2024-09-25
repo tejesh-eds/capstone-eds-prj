@@ -1,3 +1,21 @@
+.cards-container .default-content-wrapper h3 {
+  font-weight: normal;
+  font-size: var(--fontSizeH3);
+}
+
+.cards-container .default-content-wrapper h3::after {
+  content: "";
+  border-bottom: 2px solid var(--brand-primary-color);
+  display: block;
+  padding-top: 8px;
+  width: 84px;
+}
+
+.cards-container .default-content-wrapper h4 {
+  font-size: var(--fontSizeH4);
+  font-weight: normal;
+}
+
 .cards > ul {
   list-style: none;
   margin: 0;
@@ -8,12 +26,43 @@
 }
 
 .cards > ul > li {
-  border: 1px solid #dadada;
   background-color: var(--background-color);
 }
 
 .cards .cards-card-body {
-  margin: 16px;
+  margin: 0;
+}
+
+.cards .cards-card-body .button-container {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+.cards .cards-card-body .button-container a {
+  margin: 0;
+  background-color: transparent;
+  padding: 3px 0 0 0;
+  color: var(--background-color-hf);
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-m);
+  font-weight: 600;
+  text-transform: uppercase;
+  overflow: initial;
+  white-space: initial;
+  text-align: initial;
+  line-height: 1.5;
+}
+
+.cards .cards-card-body p:nth-child(2) {
+  color: dimgray;
+  display: block;
+  font-size: var(--body-font-size-xs);
+  margin-top: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .cards .cards-card-image {
@@ -24,4 +73,12 @@
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+}
+
+.section.cards-container .default-content-wrapper:last-child::after {
+  border-bottom: 2px solid var(--text-color-hf);
+  content: "";
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 90px;
 }
