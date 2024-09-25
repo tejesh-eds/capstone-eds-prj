@@ -3,7 +3,7 @@ body.modal-open {
 }
 
 .modal dialog::backdrop {
-  background-color: rgb(19 19 19 / 0);
+  background-color: rgb(19 19 19 / 0%);
 }
 
 .modal dialog {
