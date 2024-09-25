@@ -38,6 +38,7 @@
   --body-font-size-s: 19px;
   --body-font-size-sm: 14px;
   --body-font-size-xs: 17px;
+  --font-size-h1: 40px;
   --font-size-h3: 36px;
   --font-size-h4: 24px;
   
@@ -82,6 +83,7 @@
     --heading-font-size-s: 20px;
     --heading-font-size-xs: 18px;
     --font-size-h4: 24px;
+    --font-size-h1: 40px;
   }
 }
 
