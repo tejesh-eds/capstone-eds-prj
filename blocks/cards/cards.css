@@ -55,7 +55,7 @@
 
 .members-only-section .cards > ul > li::before {
   content: "\1F512";
-  background: linear-gradient(to top left, hsla(0, 0%, 100%, 0) 0, hsla(0, 0%, 100%, 0) 50%, var(--brand-primary-color) 50%, var(--brand-primary-color) 100%);
+  background: linear-gradient(to top left, #fff0 0, #fff0 50%, var(--brand-primary-color) 50%, var(--brand-primary-color) 100%);
   width: 48px;
   height: 49px;
   position: absolute;
