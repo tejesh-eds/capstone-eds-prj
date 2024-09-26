@@ -1,9 +1,11 @@
-.cards-container .default-content-wrapper h3 {
+.cards-container .default-content-wrapper h3,
+.members-only-section .default-content-wrapper h2 {
   font-weight: normal;
   font-size: var(--font-size-h3);
 }
 
-.cards-container .default-content-wrapper h3::after {
+.cards-container .default-content-wrapper h3::after,
+.members-only-section .default-content-wrapper h2::after {
   content: "";
   border-bottom: 2px solid var(--brand-primary-color);
   display: block;
@@ -14,6 +16,19 @@
 .cards-container .default-content-wrapper h4 {
   font-size: var(--font-size-h4);
   font-weight: normal;
+}
+
+.members-only-section .default-content-wrapper p {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.members-only-section .default-content-wrapper p::after {
+  border-bottom: 2px solid var(--text-color-hf);
+  content: "";
+  display: block;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .cards > ul {
@@ -29,8 +44,39 @@
   background-color: var(--background-color);
 }
 
+.members-only-section .cards-card-body,
+.members-only-section .cards-card-image {
+  opacity: .65;
+}
+
+.members-only-section .cards > ul > li {
+  position: relative;
+}
+
+.members-only-section .cards > ul > li::before {
+  content: "\1F512";
+  background: linear-gradient(to top left, hsla(0, 0%, 100%, 0) 0, hsla(0, 0%, 100%, 0) 50%, var(--brand-primary-color) 50%, var(--brand-primary-color) 100%);
+  width: 48px;
+  height: 49px;
+  position: absolute;
+  top: 1px;
+  left: 0;
+  z-index: 2;
+  transform: rotate(360deg);
+  font-size: 26px;
+}
+
 .cards .cards-card-body {
   margin: 0;
+}
+
+.members-only-section .cards-card-body h3 {
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-m);
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.5;
+  margin-top: 0;
 }
 
 .cards .cards-card-body .button-container {
@@ -63,6 +109,16 @@
   text-overflow: ellipsis;
   text-transform: uppercase;
   white-space: nowrap;
+}
+
+.members-only-section .cards-card-body p:nth-child(3) {
+  background-color: var(--text-color-hf);
+  color: dimgray;
+  font-size: var(--body-font-size-xs);
+  padding: .5em 1em;
+  text-transform: uppercase;
+  margin: 18px 0 19px;
+  display: inline-block;
 }
 
 .cards .cards-card-image {
