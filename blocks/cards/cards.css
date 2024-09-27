@@ -27,8 +27,8 @@
   border-bottom: 2px solid var(--text-color-hf);
   content: "";
   display: block;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .cards > ul {
@@ -37,7 +37,7 @@
   padding: 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
-  grid-gap: 24px;
+  grid-gap: 8px;
 }
 
 .cards > ul > li {
@@ -51,6 +51,7 @@
 
 .members-only-section .cards > ul > li {
   position: relative;
+  margin-bottom: 25px;
 }
 
 .members-only-section .cards > ul > li::before {
@@ -72,7 +73,7 @@
 
 .members-only-section .cards-card-body h3 {
   font-family: var(--body-font-family);
-  font-size: var(--body-font-size-m);
+  font-size: var(--body-font-size-s);
   font-weight: 600;
   text-transform: uppercase;
   line-height: 1.5;
@@ -91,7 +92,7 @@
   padding: 3px 0 0;
   color: var(--background-color-hf);
   font-family: var(--body-font-family);
-  font-size: var(--body-font-size-m);
+  font-size: var(--body-font-size-s);
   font-weight: 600;
   text-transform: uppercase;
   overflow: initial;
@@ -103,7 +104,7 @@
 .cards .cards-card-body p:nth-child(2) {
   color: dimgray;
   display: block;
-  font-size: var(--body-font-size-xs);
+  font-size: var(--body-font-size-sm);
   margin-top: 1rem;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -114,7 +115,7 @@
 .members-only-section .cards-card-body p:nth-child(3) {
   background-color: var(--text-color-hf);
   color: dimgray;
-  font-size: var(--body-font-size-xs);
+  font-size: var(--body-font-size-sm);
   padding: .5em 1em;
   text-transform: uppercase;
   margin: 18px 0 19px;
@@ -135,6 +136,43 @@
   border-bottom: 2px solid var(--text-color-hf);
   content: "";
   display: block;
-  margin-top: 40px;
-  margin-bottom: 90px;
+  margin-top: 12px;
+  margin-bottom: 40px;
+}
+
+@media (width >= 900px) {
+  .cards > ul {
+    grid-gap: 24px;
+  }
+
+  .cards .cards-card-body .button-container a {
+    font-size: var(--body-font-size-m);
+  }
+
+  .cards .cards-card-body p:nth-child(2) {
+    font-size: var(--body-font-size-xs);
+  }
+
+  .section.cards-container .default-content-wrapper:last-child::after {
+    content: "";
+    margin-top: 40px;
+    margin-bottom: 90px;
+  }
+
+  .members-only-section .default-content-wrapper p::after {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .members-only-section .cards > ul > li {
+    margin-bottom: 0;
+  }
+
+  .members-only-section .cards-card-body h3 {
+    font-size: var(--body-font-size-m);
+  }
+
+  .members-only-section .cards-card-body p:nth-child(3) {
+    font-size: var(--body-font-size-xs);
+  }
 }

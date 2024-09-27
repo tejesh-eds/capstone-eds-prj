@@ -224,6 +224,7 @@ header nav .nav-sections ul > li {
   text-transform: uppercase;
   font-size: var(--body-font-size-xs);
   color: var(--background-color-hf);
+  margin-bottom: 20px;
 }
 
 header nav .nav-sections ul > li:hover a,
@@ -288,6 +289,10 @@ header nav .nav-sections ul > li > ul > li {
     position: relative;
   }
 
+  header nav .nav-sections ul > li {
+    margin-bottom: 0;
+  }
+
   header nav .nav-sections .default-content-wrapper > ul > li > ul {
     display: none;
     position: relative;
@@ -318,6 +323,21 @@ header nav .nav-sections ul > li > ul > li {
 
   header nav .nav-sections .default-content-wrapper > ul > li > ul > li {
     padding: 8px 0;
+  }
+}
+
+@media (width <= 767px) {
+  header .nav-wrapper {
+    padding-bottom: 25px;
+    padding-top: 25px;
+  }
+
+  header nav {
+    padding: 0 15px;
+  }
+
+  header nav .nav-brand img {
+    width: 96px;
   }
 }
 

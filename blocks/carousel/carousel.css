@@ -67,7 +67,7 @@
 
 .carousel .carousel-slide .carousel-slide-content {
   z-index: 1;
-  margin: 68px;
+  margin: auto auto 0;
   padding: 25px 25px 20px;
   color: white;
   background-color: var(--background-color);
@@ -178,7 +178,13 @@
   font-size: 25px;
 }
 
-@media (width >= 600px) {
+@media (width <= 767px) {
+  .carousel .carousel-slide .carousel-slide-content p {
+    font-size: var(--body-font-size-xs);
+  }
+}
+
+@media (width >= 767px) {
   .carousel .carousel-navigation-buttons {
     right: 0;
   }

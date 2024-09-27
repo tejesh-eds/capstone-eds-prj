@@ -19,7 +19,7 @@
   padding: 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
-  grid-gap: 24px;
+  grid-gap: 20px;
 }
 
 .custom-list-container .custom-list > ul > li {
@@ -42,7 +42,7 @@
   padding: 3px 0 0;
   color: var(--background-color-hf);
   font-family: var(--body-font-family);
-  font-size: var(--body-font-size-m);
+  font-size: var(--body-font-size-s);
   font-weight: 600;
   text-transform: uppercase;
   overflow: initial;
@@ -54,7 +54,7 @@
 .custom-list-container .custom-list .cards-card-body p:nth-child(2) {
   color: dimgray;
   display: block;
-  font-size: var(--body-font-size-xs);
+  font-size: var(--body-font-size-sm);
   margin-top: 1rem;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -70,4 +70,18 @@
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+}
+
+@media (width >= 900px) {
+    .custom-list-container .custom-list > ul {
+      grid-gap: 24px;
+    }
+
+    .custom-list-container .custom-list .cards-card-body .button-container a {
+      font-size: var(--body-font-size-m);
+    }
+    
+    .custom-list-container .custom-list .cards-card-body p:nth-child(2) {
+      font-size: var(--body-font-size-xs);
+    }
 }
