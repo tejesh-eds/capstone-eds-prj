@@ -267,6 +267,7 @@ main > .section:first-of-type {
   main > .section:first-of-type {
     padding-top: 100px;
   }
+  
   a.button:any-link, 
   button {
     padding: 0.5em 1em;

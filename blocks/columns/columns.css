@@ -109,6 +109,11 @@
     gap: 0;
   }
 
+  .magazine-details .columns > div {
+    flex-direction: unset;
+    gap: 60px;
+  }
+  
   .featured-main .columns > div > div {
     flex: 1;
     order: unset;
@@ -132,11 +137,6 @@
   
   .featured-main .columns > div > div > h3:nth-child(2) {
     font-size: var(--font-size-h3);
-  }
-
-  .magazine-details .columns > div {
-    flex-direction: unset;
-    gap: 60px;
   }
 
   .magazine-details .columns > div > div {
