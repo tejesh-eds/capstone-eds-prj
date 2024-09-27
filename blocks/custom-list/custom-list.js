@@ -1,4 +1,4 @@
-import { getDataFromJSON } from '../../utils/helper.js';
+import getDataFromJSON from '../../utils/helper.js';
 import { createOptimizedPicture } from '../../scripts/aem.js'; // Adjust path as necessary
 
 // Select the custom list block container
