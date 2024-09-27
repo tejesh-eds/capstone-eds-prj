@@ -55,6 +55,13 @@
   line-height: 1;
 }
 
+.magazine-details .columns h2 {
+  font-size: var(--font-size-h3);
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
 .featured-main .columns > div > div > h2:first-child {
   font-size: var(--body-font-size-s);
   font-weight: 700;
@@ -170,13 +177,6 @@
   text-transform: uppercase;
   line-height: 1.5;
   margin: 20px 0;
-}
-
-.magazine-details .columns h2 {
-  font-size: var(--font-size-h3);
-  font-weight: 400;
-  line-height: 1.5;
-  margin-bottom: 20px;
 }
 
 .magazine-details .columns h2::after {
