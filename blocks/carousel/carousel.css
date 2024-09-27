@@ -119,9 +119,9 @@
 }
 
 .carousel .carousel-slide-indicator button {
-  width: 10px;
-  height: 10px;
-  margin: 0;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
   padding: 0;
   border-radius: 50%;
   background-color: #00000080;
@@ -197,5 +197,13 @@
 
   .carousel .carousel-slide .carousel-slide-content[data-align='justify'] {
     --slide-content-width: auto;
+  }
+}
+
+@media (width >= 900px) {
+  .carousel .carousel-slide-indicator button {
+    width: 10px;
+    height: 10px;
+    margin: 0 3px;
   }
 }

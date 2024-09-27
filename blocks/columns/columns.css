@@ -55,7 +55,7 @@
   line-height: 1;
 }
 
-.featured-main .columns > div > div > h3:first-child {
+.featured-main .columns > div > div > h2:first-child {
   font-size: var(--body-font-size-s);
   font-weight: 700;
   color: var(--background-color-hf);
@@ -63,7 +63,7 @@
   margin-bottom: 45px;
 }
 
-.featured-main .columns > div > div > h3:nth-child(2) {
+.featured-main .columns > div > div > h2:nth-child(2) {
   font-size: var(--font-size-h3);
   font-weight: normal;
   color: var(--background-color-hf);
@@ -131,11 +131,11 @@
     height: 510px;
   }
 
-  .featured-main .columns > div > div > h3:first-child {
+  .featured-main .columns > div > div > h2:first-child {
     font-size: var(--body-font-size-m);
   }
   
-  .featured-main .columns > div > div > h3:nth-child(2) {
+  .featured-main .columns > div > div > h2:nth-child(2) {
     font-size: var(--font-size-h3);
   }
 
