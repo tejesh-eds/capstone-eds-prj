@@ -23,7 +23,7 @@
 }
 
 form .heading-wrapper h2 {
-  font-size: var(--font-size-h1);
+  font-size: var(--heading-font-size-xl);
   font-weight: normal;
   line-height: 1.5;
   margin-bottom: 0;
@@ -39,7 +39,7 @@ form .heading-wrapper h2::after {
 }
 
 form .plaintext-wrapper p {
-  font-size: var(--font-size-h4);
+  font-size: var(--body-font-size-m);
   font-weight: normal;
   line-height: 1.5;
   margin: 0;
@@ -78,6 +78,20 @@ form .field-wrapper label {
   .form fieldset {
     grid-template-columns: repeat(3, auto);
   }
+
+  .form input, 
+  .form select, 
+  .form textarea {
+    height: 66px;
+  }
+
+  form .heading-wrapper h2 {
+    font-size: var(--font-size-h1);
+  }
+
+  form .plaintext-wrapper p {
+    font-size: var(--font-size-h4);
+  }
 }
 
 .form .selection-wrapper label {
@@ -101,7 +115,6 @@ form .field-wrapper label {
   font-weight: 400;
   transition: border-color 0.2s;
   outline: 0;
-  height: 66px;
 }
 
 .form textarea {

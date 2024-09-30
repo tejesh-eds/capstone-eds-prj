@@ -22,7 +22,7 @@
   border-radius: 0;
   color: var(--background-color-hf);
   height: 42px;
-  width: calc(100% - 2rem);
+  width: calc(100% - 4rem);
   padding-left: 2.1rem;
   padding-right: 0.5rem;
 }
@@ -148,4 +148,30 @@
   height: 24px;
   width: 24px;
   border-radius: 50%;
+}
+
+@media (width <= 767px) {
+  .search .search-box {
+    justify-content: flex-end;
+    display: inline-flex;
+  }
+
+  .search .search-box input {
+    padding-left: 1.6rem;
+    padding-right: 0.1rem;
+  }
+  
+  .search .search-box .icon-search {
+    position: absolute;
+    left: 68px;
+    width: 18px;
+    height: 18px;
+    top: 5px;
+  }
+}
+
+@media (width >= 900px) {
+  .search .search-box input {
+    width: calc(100% - 2rem);
+  }
 }
