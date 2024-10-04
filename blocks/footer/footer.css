@@ -128,3 +128,9 @@ footer .section .default-content-wrapper p a {
     justify-content: center;
   }
 }
+
+@media (width >= 900px) and (width <= 1030px) {
+  footer .columns ul li a {
+    padding: 0 19px 0 0;
+  }
+}

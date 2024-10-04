@@ -10,7 +10,7 @@ async function renderCustomList(jsonURL) {
   const data = await getDataFromJSON(jsonURL);
 
   // Clear existing content in the container
-  customListContainer.innerHTML = '';
+  customListContainer.textContent = '';
 
   // Create a new unordered list to append items
   const ulElement = document.createElement('ul');
